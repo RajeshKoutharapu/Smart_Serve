@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Smartserve</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>controler</display-name>
+    <servlet-name>controler</servlet-name>
+    <servlet-class>com.servepack.controler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>controler</servlet-name>
+    <url-pattern>/controler</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Quantitycaluculator</display-name>
+    <servlet-name>Quantitycaluculator</servlet-name>
+    <servlet-class>com.servepack.Quantitycaluculator</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Quantitycaluculator</servlet-name>
+    <url-pattern>/Quantitycaluculator</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>check</display-name>
+    <servlet-name>check</servlet-name>
+    <servlet-class>com.servepack.check</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>check</servlet-name>
+    <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+</web-app>
